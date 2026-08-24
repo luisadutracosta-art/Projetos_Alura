@@ -5,37 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <style>
-        header {
-            background-color: #E70771;
-            color: #FFFFFF;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 16px;
-
-        }
-
-        main {
-            background-color: #FFFFFF;
-            color: #E70771;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 16px;
-        }
-        article{
-            display: flex;
-        }
-
-        img {
-            width: 80px;
-            height: 80px;
-        }
-
-        .artigo-autor {
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -45,7 +15,7 @@
     </header>
     <main>
         <article>
-            <img src="image.animation.blog.png"
+            <img src="image.1.png"
                 alt="Ilustração minimalista em linhas magenta sobre fundo branco mostrando a mão de um animador desenhando em um folhoscópio em movimento, com a animação de um cavalo correndo.">
             <div>
                 <h2>Meu primeiro post</h2>
@@ -57,40 +27,19 @@
             </div> 
         </article>
         <article>
-            <img src="image.animation.blog.png"
-                alt="Ilustração minimalista em linhas magenta sobre fundo branco mostrando a mão de um animador desenhando em um folhoscópio em movimento, com a animação de um cavalo correndo.">
+            <img src="image.2.blog.png"
+                alt="">
             <div>
-                <h2>A Origem da Animação: Ciclo Circular</h2>
+                <h2>Os Primeiros Registros na Pré-História</h2>
                 <p class="artigo-autor">Por: Luisa Dutra Costa</p>
-                <p>  Muito antes do cinema e dos livrinhos folheados, a animação nasceu no século XIX em formato de looping infinito, usando discos e tambores giratórios.Movimento Infinito: Os desenhos ficavam nas bordas de aparelhos como o Zootrópio. Ao girarem, criavam uma ação repetitiva sem fim.Ação Curta: Pelo espaço limitado do círculo, as animações tinham apenas de 8 a 16 quadros (como um cavalo correndo).Legado: Esse conceito é o tataravô dos GIFs animados e dos loops de movimento dos jogos e desenhos hoje.A animação nasceu não para contar histórias, mas para provar que a ilusão do movimento era possível!</p>
+                <p>Desde 30.000 a.C., a humanidade busca retratar o movimento por meio de desenhos, como demonstra uma tigela de cerâmica da Idade do Bronze encontrada em Shahr-e Sukhteh (Irã), que ilustra cabras saltando e serve como um dos primeiros registros dessa técnica na história.</p>
                 <button>❤️ <span></span>0</button>
                 <button>👍 <span></span>0</button>
             </div>
         </article>
 
     </main>
+    <script src="script.js"></script>
 </body>
-<script>
-    const botoes = document.querySelectorAll("button");
-
-    botoes.forEach(function (botao) {
-        let curtiu = false;
-        botao.addEventListener("click", botaoClicado);
-        function botaoClicado() {
-            console.log("fui clicado");
-            let texto = botao.querySelector("span");
-            if (curtiu === false){
-                texto.textContent++;
-                curtiu = true;
-                texto.textContent--;
-                curtiu = false;
-            } else{
-            }
-
-        }
-    })
-
-
-</script>
 
 </html>
