@@ -1,8 +1,11 @@
+       body{
+        max-width: 100vw;
+       }
+       
        header {
            background-color: #E70771;
            color: #FFFFFF;
            text-align: center;
-           max-width: 800px;
            margin: 0 auto;
            padding: 16px;
 
@@ -11,13 +14,28 @@
        main {
            background-color: #FFFFFF;
            color: #E70771;
-           max-width: 800px;
            margin: 0 auto;
            padding: 16px;
+
+           display: flex;
+           flex-wrap: wrap;
        }
 
        article {
            display: flex;
+
+           border: 1px solid #E70771;
+
+           margin: 16px;
+           gap: 16px;
+           padding: 16px;
+
+           flex: 1 1 25%;
+
+           flex-direction: column;
+           align-items: center;
+           text-align: center;
+           justify-content: center;
        }
 
        img {
